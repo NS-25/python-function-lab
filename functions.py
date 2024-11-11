@@ -128,4 +128,29 @@ def calculate_tip(bill,tip):
     tip = bill * (tip / 100);
     return tip;
 
-print('Exercise 7:', calculate_tip(50, 20))
+# print('Exercise 7:', calculate_tip(50, 20))
+
+# Exercise 8: Calculate Product of Numbers
+#
+# Write a function named `product` that takes an arbitrary number of numbers, multiplies them, and returns the product.
+# Review your notes on *args for handling an arbitrary number of arguments.
+#
+# Examples:
+# product(-1, 4) should return -4.
+# product(2, 5, 5) should return 50.
+#
+# Define the function and call it with different sets of numbers to test.
+def product(*args):
+    result = 1;
+    for arg in args:
+        result *= arg;
+    return result;
+
+print('Exercise 8:', product(2, 5, 5))
+# def product(*args):
+#     # Initialize the product to 1 (multiplicative identity)
+#     result = 1
+#     # Multiply each number in args
+#     for num in args:
+#         result *= num
+#     return result
